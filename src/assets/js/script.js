@@ -16,3 +16,12 @@
           }
         });
       });
+
+        function Copiar() {
+            const textToCopy = "56.986.342/0001-87";
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                alert("Chave PIX copiada: " + textToCopy);
+            }).catch(err => {
+                console.error("Erro ao copiar: ", err);
+            });
+        }
