@@ -5,7 +5,7 @@ main {
 footer {
     position: relative;
     width: 100%;
-    color: #f5f5f5;
+    color: white;
 }
 
 .footer-link {
@@ -13,24 +13,24 @@ footer {
 }
 
 #footer_content {
-    background-color: #171717;
+    background-color: #021452;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 1.4rem 3rem;
 }
 
 #footer_content p {
-    color: #a8a29e ;
+    color: white ;
 }
 
-#footer_contacts h1 {
+#footer_contacts h3 {
     margin-bottom: 0.75rem;
 }
 
 
 #footer_social_media {
     display: flex;
-    gap: 2rem;
+    gap: 0.8rem;
     margin-top: 1.5rem;
 }
 
@@ -62,8 +62,8 @@ footer {
     background-color: #4267b3;
 }
 
-#whatsapp {
-    background-color: #25d366;
+#email {
+    background-color: #ff6054;
 }
 
 .footer-list {
@@ -74,7 +74,7 @@ footer {
 }
 
 .footer-list .footer-link {
-    color: #a8a29e;
+    color: white;
     transition: all 0.8s;
 }
 
@@ -83,11 +83,12 @@ footer {
 }
 
 #footer_copyright {
+    color: white;
     display: flex;
     justify-content: center;
-    background-color: #0e0c0c;
+    background-color: #000b30;
     font-size: 0.9rem;
-    padding: 1.5rem;
+    padding: 1.1rem;
     font-weight: 100;
 }
 
@@ -114,7 +115,7 @@ footer {
 }
 
 #doe-agora p {
-    color:#a8a29e;
+    color: white;
     margin: 0;
     padding: 0;
     line-height: 2;
