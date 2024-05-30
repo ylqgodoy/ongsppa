@@ -20,7 +20,7 @@ footer {
 }
 
 #footer_content p {
-    color: white ;
+    color: #adadad ;
 }
 
 #footer_contacts h3 {
@@ -67,14 +67,14 @@ footer {
 }
 
 .footer-list {
-    display: flex;
+    line-height: 37px;
     flex-direction: column;
     gap: 0.7rem;
     list-style: none;
 }
 
 .footer-list .footer-link {
-    color: white;
+    color: #adadad;
     transition: all 0.8s;
 }
 
@@ -105,7 +105,7 @@ footer {
 }
 
 .copy-button i {
-  font-size: 1.4em; 
+  font-size: 1.25rem; 
   color: skyblue;
 }
 
@@ -115,7 +115,7 @@ footer {
 }
 
 #doe-agora p {
-    color: white;
+    color: #adadad;
     margin: 0;
     padding: 0;
     line-height: 2;
@@ -125,7 +125,7 @@ footer {
 #qr-code {
     margin-left: 10px;
     width: 110px; 
-    margin-top: -45px; 
+    margin-top: -5%; 
     height: auto; 
 }
 
