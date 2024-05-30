@@ -45,14 +45,14 @@ header .navbar {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  background-color: #fff9ea;
+  background-color: white;
   box-shadow: var(--shadow-1);
 }
 
 .navbar .logo img {
-  width: 100px;
+  width: 80px;
+  height: 70px;
   margin-left: 10px;
-  height: auto;
 }
 
 .navbar .menu-links {
@@ -68,12 +68,12 @@ header .navbar {
   text-decoration: none;
   transition: 0.3s;
   border-radius: 10px;
-  font-size: 1.06rem;
+  font-size: 1.0rem;
 }
 
 .navbar li:hover {
   transform: scale(1.2);
-  transition: transform 0.4s ease;
+  transition: transform 0.5s ease;
 }
 
 .menu-icon {
@@ -128,7 +128,7 @@ header .navbar {
 }
 
 .texto .content span {
-  color: #144fc9;
+  color: #00359a;
 }
 
 .texto .content p {
@@ -140,7 +140,7 @@ header .navbar {
 
 .texto .content button {
   color: #fff;
-  background: #ff366f;
+  background: #fd1b3a;
   padding: 15px 37.5px; 
   font-size: 1.25rem; 
   border-radius: 12.5px; 
@@ -192,14 +192,14 @@ button img {
 }
 
 header.show-mobile-menu #hamburger-btn {
-  display: none; /* Oculta o ícone do hamburguer quando o menu está aberto */
+  display: none; 
 }
 
 header.show-mobile-menu #close-menu-btn {
-  display: block; /* Exibe o ícone de fechar menu quando o menu está aberto */
+  display: block; 
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1100px) {
 
   .menu-icon {
     display: block;

@@ -16,7 +16,6 @@ footer {
     background-color: #171717;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /*define as coluna que vai ter no footer*/
     padding: 1.4rem 3rem;
 }
 
@@ -72,17 +71,11 @@ footer {
 
 .footer-list .footer-link {
     color: #a8a29e;
-    transition: all 0.4s;
+    transition: all 0.8s;
 }
 
 .footer-list .footer-link:hover {
-    color: #ff366f;
-}
-
-#parcerias img {
-    max-width: 110px;
-    height: auto;
-    border: solid 1px black;
+    color: #ff425c;
 }
 
 #footer_copyright {
@@ -94,10 +87,55 @@ footer {
     font-weight: 100;
 }
 
-@media screen and (max-width: 768px) {
+#doe-agora span {
+  color: skyblue;
+}
+
+ .copy-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.copy-button i {
+  font-size: 1.4em; 
+  color: deepskyblue;
+}
+
+#doe-agora {
+    display: flex;
+    align-items: center;
+}
+
+#doe-agora p {
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+    flex: 1;
+}
+
+#qr-code {
+    margin-left: 10px;
+    width: 110px; 
+    margin-top: -45px; 
+    height: auto; 
+}
+
+@media screen and (max-width: 840px) {
     #footer_content {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
+    }
+
+    #qr-code {
+        display: none;
+    }
+}@media screen and (max-width: 1250px) {
+    #qr-code {
+        display: none;
     }
 }
 
@@ -105,5 +143,9 @@ footer {
     #footer_content {
         grid-template-columns: repeat(1, 1fr);
         padding: 3rem 2rem;
+    }
+
+    #qr-code {
+        display: none;
     }
 }
