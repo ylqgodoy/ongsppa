@@ -146,6 +146,9 @@ footer {
 }
 
 @media screen and (max-width: 426px) {
+    *{
+        zoom: 98.3%;
+    }
     #footer_content {
         grid-template-columns: repeat(1, 1fr);
         padding: 3rem 2rem;
