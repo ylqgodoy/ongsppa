@@ -83,7 +83,7 @@ footer {
 }
 
 #footer_copyright {
-    color: white;
+    color: #adadad;
     display: flex;
     justify-content: center;
     background-color: #000b30;
