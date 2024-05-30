@@ -11,20 +11,6 @@
   font-family: Poppins;
   letter-spacing: 1px;
   zoom: 100%; 
-
-}
-
-html ::-webkit-scrollbar {
-  width: 8px;
-}
-
-html ::-webkit-scrollbar-thumb {
-  border-radius: 50px;
-  background: gray;
-}
-
-html ::-webkit-scrollbar-track {
-  background: #ededed;
 }
 
 body {
@@ -197,6 +183,22 @@ header.show-mobile-menu #hamburger-btn {
 
 header.show-mobile-menu #close-menu-btn {
   display: block; 
+}
+
+#doe-agora span {
+  color: lightskyblue;
+}
+ .copy-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.copy-button i {
+  font-size: 1.4em; 
+  color: lightblue;
 }
 
 @media (max-width: 1100px) {
