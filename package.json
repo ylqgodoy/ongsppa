@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  "build": "tailwindcss -i ./src/styles.css -o ./dist/styles.css && cp ./index.html ./dist/index.html"
+  "build": "tailwindcss -i ./src/styles.css -o ./public/styles.css && cp ./index.html ./public/index.html"
   },
   "keywords": [],
   "author": "",
