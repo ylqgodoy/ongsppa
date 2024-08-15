@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    include '../lib/database.php';
+    include '../src/lib/database.php';
     date_default_timezone_set('America/Sao_Paulo');
 
     $um_ano = date('Y-m-d H:i:s', strtotime('-1 year'));
