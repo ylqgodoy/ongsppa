@@ -3,7 +3,7 @@
     "api/index.php": {
       "runtime": "vercel-php@0.7.1"
     },
-    "src/pages/*.php": {
+    "api/pages/*.php": {
       "runtime": "vercel-php@0.7.1"
     }
   },
