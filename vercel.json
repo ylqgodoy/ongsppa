@@ -1,0 +1,7 @@
+{
+    "functions": {
+      "api/pages/*.php": {
+        "runtime": "vercel-php@vercel-php@0.7.1"
+      }
+    }
+  }
