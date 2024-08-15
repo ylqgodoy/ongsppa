@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./src/styles.css -o ./public/styles.css"
+    "build": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch"
   },
   "keywords": [],
   "author": "",
@@ -11,7 +11,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.41",
-    "tailwindcss": "^3.4.10"
+    "tailwindcss": "^3.4.9"
   },
   "description": ""
 }

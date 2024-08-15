@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.9 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -662,10 +662,6 @@ video {
   margin-top: 3rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
 }
@@ -696,10 +692,6 @@ video {
 
 .h-14 {
   height: 3.5rem;
-}
-
-.h-auto {
-  height: auto;
 }
 
 .h-full {
@@ -1023,10 +1015,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:block {
-    display: block;
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
