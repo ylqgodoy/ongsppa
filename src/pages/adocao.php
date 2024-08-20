@@ -126,16 +126,23 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Adoção de Animais Abandonados</title>
+		<title>Pets para adoção | SPPA</title>
 		<link href="../../dist/styles.css" rel="stylesheet">
 		<script src="https://cdn.tailwindcss.com"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" type="imagex/png" href="../assets/images/1.ico">
+
 		<style>
 			#login-panel {
 				max-height: 90vh;
 				overflow: auto;   
 			}
+
+			.login-panel {
+		      	height: calc(100vh + 500px);
+		      	width: 100vw;
+		    }
 			
 			body.modal-open {
 				overflow: hidden;
@@ -399,7 +406,7 @@
 						<a href="#" class="nav-link text-black text-lg rounded transition duration-300">CONTATO</a>
 					</li>
 				</ul>
-				<div class="hidden lg:flex gap-3">
+				<div class="hidden lg:flex mr-2 gap-3">
 					<a href="https://www.instagram.com/sppaongpiracicaba" target="_blank" class="text-pink-500 text-3xl">
 						<i class="fab fa-instagram"></i>
 					</a>
@@ -422,22 +429,29 @@
 					<li><a href="#" class="text-black text-lg rounded transition duration-300">EVENTOS</a></li>
 					<li><a href="#" class="text-black text-lg rounded transition duration-300">DOAÇÕES</a></li>
 					<li><a href="#" class="text-black text-lg rounded transition duration-300">CONTATO</a></li>
+					<li><a href="https://www.instagram.com/sppaongpiracicaba" target="_blank" class="text-pink-500 text-3xl">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a href="https://www.facebook.com/groups/298032553718906/" target="_blank" class="text-blue-700 text-3xl">
+							<i class="fab fa-facebook"></i>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
-		<div class="bg-white pt-12">
+		<div class="bg-white/60 pt-12">
 			<div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
 				<div class="lg:text-center flex flex-col items-center">
-					<p class="mt-2 text-3xl leading-8 font-extrabold text-center tracking-tight text-gray-900 sm:text-4xl">Encontre um Companheiro para Sua Vida</p>
-					<p class="mt-4 max-w-2xl text-xl text-gray-500 text-center">Adote um amigo de quatro patas e faça a diferença na vida de um animal hoje mesmo. <span class="text-red-500 font-bold">Eles estão esperando por você!</span></p>
+					<p class="mt-10 text-3xl leading-8 font-extrabold text-center tracking-tight text-gray-900 sm:text-4xl">Encontre um Companheiro para Sua Vida</p>
+					<p class="mt-4 mb-6 max-w-2xl text-xl text-gray-500 text-center">Adote um amigo de quatro patas e faça a diferença na vida de um animal hoje mesmo. <span class="text-red-500 font-bold">Eles estão esperando por você!</span></p>
 					</p>
 				</div>
 				<div class="mt-10">
-					<hr>
+					<hr class="mb-10">
 					<dl class="space-y-10 pt-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
 						<div class="relative">
 							<dt>
-								<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+								<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-emerald-600 text-white">
 									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 										<circle cx="12" cy="12" r="10"></circle>
 										<line x1="12" y1="8" x2="12" y2="12"></line>
@@ -446,22 +460,22 @@
 								</div>
 								<p class="ml-16 text-lg leading-6 font-medium text-gray-900">Ensina Responsabilidade</p>
 							</dt>
-							<dd class="mt-2 ml-16 text-base text-gray-500"> Cuidar de um animal de estimação ensina responsabilidade, empatia e compaixão, especialmente para crianças. Eles aprendem a importância de alimentar, exercitar e cuidar de outro ser vivo. </dd>
+							<dd class="mt-2 ml-16 text-base text-gray-500"> Cuidar de um animal de estimação ensina responsabilidade, empatia e compaixão, especialmente em crianças. </dd>
 						</div>
 						<div class="relative">
 							<dt>
-								<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+								<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-yellow-400 text-white">
 									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 										<path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
 									</svg>
 								</div>
 								<p class="ml-16 text-lg leading-6 font-medium text-gray-900">Proporciona Alegria e Diversão</p>
 							</dt>
-							<dd class="mt-2 ml-16 text-base text-gray-500"> Animais de estimação trazem muita alegria e diversão para o lar. Suas travessuras engraçadas e personalidades únicas podem trazer momentos de felicidade e risos para toda a família. </dd>
+							<dd class="mt-2 ml-16 text-base text-gray-500"> Animais de estimação trazem alegria e diversão ao lar com suas travessuras, proporcionando felicidade à família. </dd>
 						</div>
 						<div class="relative">
 							<dt>
-								<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+								<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-red-400 text-white">
 									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 										<path d="M20 9v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9" />
 										<path d="M9 22V12h6v10M2 10.6L12 2l10 8.6" />
@@ -469,31 +483,31 @@
 								</div>
 								<p class="ml-16 text-lg leading-6 font-medium text-gray-900">Salva Vidas</p>
 							</dt>
-							<dd class="mt-2 ml-16 text-base text-gray-500"> Ao adotar um animal de um abrigo ou resgate, você está potencialmente salvando uma vida. Muitos animais em abrigos estão à espera de um lar amoroso e uma segunda chance de vida. </dd>
+							<dd class="mt-2 ml-16 text-base text-gray-500"> Adotar um animal de um abrigo pode salvar uma vida, dando a ele uma segunda chance em um lar amoroso. </dd>
 						</div>
 						<div class="relative">
 							<dt>
-								<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+								<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-pink-400 text-white">
 									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 										<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
 									</svg>
 								</div>
 								<p class="ml-16 text-lg leading-6 font-medium text-gray-900">Companheirismo e Amor</p>
 							</dt>
-							<dd class="mt-2 ml-16 text-base text-gray-500"> Animais de estimação são ótimos companheiros e podem oferecer amor incondicional. Eles podem ajudar a reduzir o estresse e a solidão, proporcionando uma fonte constante de apoio emocional. </dd>
+							<dd class="mt-2 ml-16 text-base text-gray-500"> Animais de estimação oferecem amor incondicional e apoio emocional, ajudando a reduzir o estresse e a solidão. </dd>
 						</div>
 					</dl>
 					<br>
-					<hr>
+					<hr class="mt-10">
 					<div class="flex justify-center">
 						<a href="#animais">
-							<button id="buttonanimal" class="mt-12 bg-blue-600 text-white py-4 px-8 text-lg font-bold rounded-lg shadow-md hover:scale-110 transition-transform duration-500"> Adotar um peludinho </button>
+							<button id="buttonanimal" class="mt-12 bg-blue-600 text-white py-4 px-8 text-lg font-bold rounded-2xl shadow-md hover:scale-110 transition-transform duration-500"> Adotar um peludinho <img src="../assets/images/btn.png" class="inline w-6 ml-2"></button>
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<section id="animais" class="py-16 bg-[#FBFDFF]" style="background-image: url('../assets/images/patinhas.png'); background-size: 900px; background-repeat: repeat;">
+		<section id="animais" class="py-16 bg-gray-100" style="background-image: url('../assets/images/patinhas.png'); background-size: 900px; background-repeat: repeat;">
 			<div class="container mx-auto px-4">
 				<div class="text-center mb-8">
 					<h2 class="text-3xl font-bold mb-4">Animais Disponíveis</h2>
@@ -525,7 +539,7 @@
 									<input type="file" name="imagem" class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100" required>
 								</div>
 								<div>
-									<label for="tipo" class="block text-sm font-medium text-gray-700">Tipo do animal:</label>
+									<label for="tipo" class="block text-sm font-medium text-gray-700">Espécie do animal:</label>
 									<select name="tipo" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
 										<option value="Cachorro">Cachorro</option>
 										<option value="Gato">Gato</option>
@@ -533,7 +547,7 @@
 									</select>
 								</div>
 								<div>
-									<label for="idade" class="block text-sm font-medium text-gray-700">Idade do animal:</label>
+									<label for="idade" class="block text-sm font-medium text-gray-700">Idade aproximada:</label>
 									<input type="text" name="idade" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
 								</div>
 								<div>
@@ -549,7 +563,7 @@
 					</div> 
 					<?php endif; ?> 
 				</div>
-				<div id="animalGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+				<div id="animalGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mb-8">
 				</div>
 				<div id="viewMoreSection" class="view-more">
 					<a href="#footer" id="viewMoreButton">Ver Mais <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -563,9 +577,9 @@
 				<span class="close" onclick="window.closeModal('animalModal')">&times;</span>
 				<!-- <img id="animalImage" class="modal-image" src="" alt="Imagem do Animal"> -->
 				<p><strong>Nome:</strong> <span id="animalName" class="break-words whitespace-normal"></span></p>
-				<p><strong>Tipo:</strong> <span id="animalType" class="break-words whitespace-normal"></span></p>
+				<p><strong>Espécie:</strong> <span id="animalType" class="break-words whitespace-normal"></span></p>
 				<p><strong>Sexo:</strong> <span id="animalGender" class="break-words whitespace-normal"></span></p>
-				<p><strong>Idade:</strong> <span id="animalAge" class="break-words whitespace-normal"></span></p>
+				<p><strong>Idade aproximada:</strong> <span id="animalAge" class="break-words whitespace-normal"></span></p>
 				<p><strong>Descrição:</strong> <span id="animalDescription" class="break-words whitespace-normal"></span></p>
 				<a href="https://www.instagram.com/direct/t/17842131356675478" class="instagram-button" target="_blank">Chamar no Instagram</a>
 			</div>
@@ -626,7 +640,7 @@
 		</footer>
 		<div class="container mx-auto">
 		<?php if (!isset($_SESSION['logged_in']) || !$_SESSION['logged_in']): ?>
-			<div id="login-panel" class="login-panel hidden fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
+			<div id="login-panel" class="mt-20 login-panel hidden fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 z-50">
 				<div class="bg-white p-6 rounded-lg shadow-md w-full max-w-sm">
 					<h2 class="text-2xl font-bold mb-4">Login</h2>
 					<form action="adocao.php" method="post" class="login-form space-y-4">
@@ -644,7 +658,7 @@
 				</div>
 			</div>
 		<?php endif; ?>
-	</div>
+		</div>
 		<button onclick="scrollToTop()" class="back-to-top">
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 				<path d="M12 19V6M5 12l7-7 7 7" />
@@ -748,22 +762,26 @@
 			}
 			
 			function populateAnimalGrid() {
-		animalGrid.innerHTML = '';
-		animals.slice(0, shownCount).forEach(animal => {
-			const isLoggedIn = <?php echo json_encode(isset($_SESSION['logged_in']) && $_SESSION['logged_in']); ?>;
-			animalGrid.innerHTML += `
-				<div class="animal bg-indigo-50 rounded-lg shadow-lg border border-indigo-100">
-					<img src="${animal.image}" alt="${animal.name}" class="w-full h-80 object-cover rounded-t-lg mb-4">
-					<div class="p-6">
-						<h3 class="text-xl font-semibold mb-2">${animal.name}</h3>
-						<p class="text-gray-700 break-words mb-4">${animal.description}</p>
-						<button onclick="window.openModal('animalModal', '${animal.image}', '${animal.name}', '${animal.type}', '${animal.gender}', '${animal.age}', '${animal.description}')" class="bg-blue-500 text-white hover:bg-blue-600 py-2 px-4 rounded-lg">Saiba Mais</button>
-						${isLoggedIn ? `<button onclick="deleteAnimal(${animal.id})" class="bg-red-700 text-white hover:bg-red-800 py-2 px-4 rounded-lg mt-2">Deletar</button>` : ''}
-					</div>
-				</div>
-			`;
-		});
-	}
+    animalGrid.innerHTML = '';
+    animals.slice(0, shownCount).forEach(animal => {
+        const isLoggedIn = <?php echo json_encode(isset($_SESSION['logged_in']) && $_SESSION['logged_in']); ?>;
+        animalGrid.innerHTML += `
+            <div class="animal bg-indigo-50 rounded-lg shadow-xl border border-indigo-100">
+                <div class="text-center">
+					<h2 class="py-2 px-4 bg-blue-600 text-xl rounded-t-lg font-bold text-white">Para Adoção</h2>
+                    <img src="${animal.image}" alt="${animal.name}" class="w-full h-80 object-cover mb-4">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">${animal.name}</h3>
+                    <p class="text-gray-700 break-words mb-4">${animal.description}</p>
+                    <button onclick="window.openModal('animalModal', '${animal.image}', '${animal.name}', '${animal.type}', '${animal.gender}', '${animal.age}', '${animal.description}')" class="bg-blue-500 text-white hover:bg-blue-600 py-2 px-4 rounded-lg">Saiba Mais</button>
+                    ${isLoggedIn ? `<button onclick="deleteAnimal(${animal.id})" class="bg-red-700 text-white hover:bg-red-800 py-2 px-4 rounded-lg mt-2">Deletar</button>` : ''}
+                </div>
+            </div>
+        `;
+    });
+}
+
 			
 			function toggleAnimals() {
 				if (shownCount >= animals.length) {
