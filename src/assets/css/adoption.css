@@ -1,0 +1,250 @@
+#login-panel {
+			max-height: 90vh;
+			overflow: auto;
+		}
+
+		.login-panel {
+			height: calc(100vh + 500px);
+			width: 100vw;
+		}
+
+		body.modal-open {
+			overflow: hidden;
+		}
+
+		.modal {
+			display: none;
+			position: fixed;
+			z-index: 1;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			background-color: rgba(0, 0, 0, 0.4);
+		}
+
+		.modal-content {
+			background-color: #fefefe;
+			margin: 15% auto;
+			padding: 20px;
+			border: 1px solid #888;
+			width: 80%;
+			max-width: 600px;
+			border-radius: 10px;
+			position: relative;
+		}
+
+		.modal-image {
+			width: 100%;
+			height: auto;
+			border-radius: 10px;
+			margin-bottom: 15px;
+		}
+
+		.close {
+			color: #aaa;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+
+		.close:hover,
+		.close:focus {
+			color: black;
+			text-decoration: none;
+		}
+
+		.instagram-button {
+			display: inline-block;
+			margin-top: 15px;
+			padding: 10px 20px;
+			background-color: #E4405F;
+			color: white;
+			font-weight: bold;
+			border-radius: 5px;
+			text-align: center;
+			text-decoration: none;
+		}
+
+		.instagram-button:hover {
+			background-color: #C13584;
+		}
+
+		.view-more {
+			display: flex;
+			justify-content: center;
+			margin: 20px 0;
+		}
+
+		.view-more a {
+			display: flex;
+			align-items: center;
+			font-size: 18px;
+			color: #3182CE;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		.view-more a:hover {
+			color: #2B6CB0;
+		}
+
+		.view-more a svg {
+			margin-left: 10px;
+			width: 24px;
+			height: 24px;
+		}
+
+		.back-to-top {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			background-color: #3182CE;
+			color: white;
+			border: none;
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			cursor: pointer;
+			font-size: 24px;
+		}
+
+		.back-to-top:hover {
+			background-color: #2B6CB0;
+		}
+
+		* {
+			font-family: 'Poppins', sans-serif;
+		}
+
+		@media (max-width: 910px) {
+			.hiddenlowres {
+				display: none;
+			}
+		}
+
+		@media (max-width: 1360px) {
+			.hiddenlowresmain {
+				display: none;
+			}
+		}
+
+		.nav-link {
+			position: relative;
+			overflow: hidden;
+			display: inline-block;
+			padding-bottom: 2px;
+		}
+
+		.nav-link::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 0;
+			height: 2px;
+			background: #000;
+			transition: width 0.3s ease, left 0.3s ease;
+			transform: translateX(-50%);
+		}
+
+		.nav-link:hover::after {
+			width: 100%;
+		}
+
+		.hidden {
+			display: none;
+		}
+
+		.icon-wrapper {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			padding: 10px;
+			transition: background-color 0.3s ease, filter 0.3s ease;
+		}
+
+		.icon-instagram {
+			background-color: #C13584;
+		}
+
+		.icon-facebook {
+			background-color: #1877F2;
+		}
+
+		.icon-email {
+			background-color: #D44638;
+		}
+
+		.icon-wrapper:hover {
+			filter: brightness(0.6);
+		}
+
+		.icon-wrapper a {
+			color: #ffffff;
+		}
+
+		.hamburger-menu {
+			transition: transform 0.3s ease-in-out;
+			transform: translateX(100%);
+		}
+
+		.hamburger-menu.active {
+			transform: translateX(0);
+		}
+
+		.overlay {
+			background: rgba(0, 0, 0, 0.5);
+			transition: opacity 0.3s ease-in-out;
+			opacity: 0;
+		}
+
+		.overlay.active {
+			opacity: 1;
+		}
+
+		@keyframes fadeIn {
+			0% {
+				opacity: 0;
+				transform: translateY(-80px);
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		@keyframes fadeOut {
+			0% {
+				opacity: 1;
+				transform: translateY(0);
+			}
+
+			100% {
+				opacity: 0;
+				transform: translateY(-80px);
+			}
+		}
+
+		.show-notification {
+			animation: fadeIn 0.5s ease-out;
+		}
+
+		.hide-notification {
+			animation: fadeOut 0.5s ease-out;
+		}
+
+		#success-animation {
+			background-color: rgba(34, 197, 94, 0.9);
+			transition: all 0.7s ease;
+		}

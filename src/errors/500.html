@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erro no servidor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:400,800" rel="stylesheet">
+
+    <style>
+        @keyframes easyoutelastic {
+            0% {
+                transform: rotateX(0);
+            }
+
+            9% {
+                transform: rotateX(210deg);
+            }
+
+            13% {
+                transform: rotateX(150deg);
+            }
+
+            16% {
+                transform: rotateX(200deg);
+            }
+
+            18% {
+                transform: rotateX(170deg);
+            }
+
+            20% {
+                transform: rotateX(180deg);
+            }
+
+            60% {
+                transform: rotateX(180deg);
+            }
+
+            80% {
+                transform: rotateX(0);
+            }
+
+            100% {
+                transform: rotateX(0);
+            }
+        }
+
+        @keyframes rotatedrop {
+            0% {
+                transform: rotate(0);
+            }
+
+            10% {
+                transform: rotate(30deg);
+            }
+
+            15% {
+                transform: rotate(90deg);
+            }
+
+            70% {
+                transform: rotate(90deg);
+            }
+
+            80% {
+                transform: rotate(0);
+            }
+
+            100% {
+                transform: rotateX(0);
+            }
+        }
+
+        .animate-easyoutelastic {
+            animation: easyoutelastic 8s infinite;
+        }
+
+        .animate-rotatedrop {
+            animation: rotatedrop 8s infinite;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-gray-100 font-['Montserrat',Helvetica,sans-serif] text-gray-600 min-h-screen flex flex-col items-center justify-center">
+    <div class="text-center">
+        <h1></h1>
+        <h1 class="text-4xl font-bold mb-8">ERRO 500</h1>
+        <p class="max-w-md text-lg mb-12">
+            <b>Estamos tendo problemas!</b> Desculpe, mas não podemos processar esta solicitação no momento
+        </p>
+        <section class="text-[180px] font-['Catamaran',sans-serif] font-extrabold mb-12 leading-[0.7]">
+            <span class="inline-block relative text-[#F0E395]">
+                <span class="inline-block origin-bottom animate-easyoutelastic">5</span>
+            </span>
+            <span class="inline-block relative text-[#FFB485]">0</span>
+            <span class="inline-block relative text-[#D15C95]">
+                <span class="inline-block origin-bottom-right animate-rotatedrop">0</span>
+            </span>
+        </section>
+    </div>
+</body>
+
+</html>

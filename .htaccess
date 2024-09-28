@@ -1,0 +1,22 @@
+RewriteEngine On
+
+RewriteRule ^403$ src/errors/403.html [L]
+RewriteRule ^404$ src/errors/404.html [L]
+RewriteRule ^500$ src/errors/500.html [L]
+
+RewriteCond %{REQUEST_URI} ^/src/.*$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* - [F]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)$ src/pages/$1.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.php [L]
+
+ErrorDocument 403 /403
+ErrorDocument 404 /404
+ErrorDocument 500 /500

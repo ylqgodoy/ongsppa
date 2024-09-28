@@ -1,5 +1,5 @@
 <?php
-    $conn = mysqli_connect("localhost", "22092", "Etk193@", "22092");
+    $conn = mysqli_connect("localhost", "root", "y19216801*DB", "ongsppa");
     if (!$conn) {
         die("Não foi possivel conectar ao bd!");
     }
