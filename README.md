@@ -17,7 +17,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 
 
 <p>📄 Licença</p>
-<p>Feito com 💜 por Kamila Oliveira 😊</p>
+<p>Feito com 💜 por Yves L. - Gabriel M. - Johnny A. - Jonas S. - Jonas A. 😊</p>
 
 <br>
 <img src="src/assets/images/preview.png">
